@@ -1,6 +1,7 @@
 package com.CheckingCollections.filesWork.classPathTesting;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -83,7 +84,7 @@ public class PathTesting {
             System.out.println(toCheckReadAllLines);
 break;
         }
-        /*List<String> stringList = new ArrayList<String>();
+        List<String> stringList = new ArrayList<String>();
         stringList.add("queen");
         stringList.add("moby");
         stringList.add("cream");
@@ -91,7 +92,16 @@ break;
         ) {
             System.out.println(temp);
             Files.write(path, stringList);
-        }*/
+        };
+        for (int i = 0; i < 103; i++) {
+
+
+        Files.write(
+                Paths.get("E:\\soft\\HoneyBonye for Sabbath\\Bloody Study.txt"),
+                "  Common everybody!\r".getBytes(),
+                StandardOpenOption.CREATE,
+                StandardOpenOption.APPEND
+        );}
 
     }
 }
